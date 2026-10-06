@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 70px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.logo span {
+    color: #315efb;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+
+.nav-links a:hover {
+    color: #315efb;
+}
+
+
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #162447, #315efb);
+    padding: 80px 7% 110px;
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.small-title {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #315efb;
+}
+
+
+.hero .small-title {
+    color: #bfcaff;
+}
+
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+
+.hero h1 span {
+    color: #ffd166;
+}
+
+
+.hero-text {
+    max-width: 650px;
+    margin: auto;
+    color: #dce3ff;
+    font-size: 18px;
+}
+
+
+
+/* SEARCH BOX */
+
+.search-box {
+    background: white;
+    color: #172033;
+
+    max-width: 1100px;
+    margin: 50px auto -160px;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+
+    gap: 15px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-group label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+
+select {
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 9px;
+
+    background: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.find-btn {
+    border: none;
+
+    border-radius: 9px;
+
+    background: #315efb;
+
+    color: white;
+
+    padding: 0 22px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.find-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+
+/* RESULTS */
+
+.results-section {
+    max-width: 1200px;
+
+    margin: 190px auto 80px;
+
+    padding: 0 25px;
+}
+
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 25px;
+}
+
+
+.section-heading h2 {
+    font-size: 35px;
+}
+
+
+.sort-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.sort-box label {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.result-message {
+    margin-bottom: 25px;
+
+    color: #666;
+}
+
+
+
+/* CARDS */
+
+.coaching-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.coaching-card {
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    border: 1px solid #e8e8e8;
+
+    transition: 0.25s;
+}
+
+
+.coaching-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+.coaching-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+
+.rating {
+    background: #e8f7ed;
+
+    color: #18864b;
+
+    padding: 5px 9px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    height: fit-content;
+}
+
+
+.card-info {
+    color: #666;
+
+    font-size: 14px;
+
+    margin: 8px 0;
+}
+
+
+.fee {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin: 15px 0;
+}
+
+
+.tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin: 15px 0;
+}
+
+
+.tag {
+    background: #f0f3ff;
+
+    color: #315efb;
+
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+}
+
+
+.card-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.details-btn,
+.compare-btn {
+    flex: 1;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.details-btn {
+    background: #315efb;
+
+    color: white;
+
+    border: none;
+}
+
+
+.compare-btn {
+    background: white;
+
+    color: #315efb;
+
+    border: 1px solid #315efb;
+}
+
+
+
+/* ABOUT */
+
+.about {
+    background: white;
+
+    text-align: center;
+
+    padding: 80px 25px;
+}
+
+
+.about h2 {
+    font-size: 35px;
+
+    margin: 10px 0 15px;
+}
+
+
+.about p:not(.small-title) {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #666;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background: #121a2d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+
+footer p {
+    color: #aeb6ca;
+
+    margin-top: 10px;
+}
+
+
+.copyright {
+    font-size: 13px;
+}
+
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+.modal-content {
+    background: white;
+
+    max-width: 550px;
+
+    width: 100%;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    position: relative;
+}
+
+
+.close-btn {
+    position: absolute;
+
+    right: 20px;
+
+    top: 15px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .search-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .find-btn {
+        padding: 15px;
+    }
+
+    .coaching-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 20px 100px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .search-box {
+        grid-template-columns: 1fr;
+
+        margin-bottom: -130px;
+    }
+
+    .results-section {
+        margin-top: 170px;
+    }
+
+    .section-heading {
+        align-items: start;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .coaching-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

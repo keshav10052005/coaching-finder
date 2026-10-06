@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coaching Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            🎓 Coaching<span>Finder</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#results">Find Coaching</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">YOUR COACHING DISCOVERY PLATFORM</p>
+
+            <h1>
+                Find the Right
+                <span>Coaching</span>
+                for You
+            </h1>
+
+            <p class="hero-text">
+                Discover and compare coaching institutes in your district
+                based on exams, fees, ratings and your preferences.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH BOX -->
+        <div class="search-box">
+
+            <div class="input-group">
+                <label>State</label>
+
+                <select id="state">
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            </div>
+
+
+            <div class="input-group">
+                <label>District</label>
+
+                <select id="district">
+                    <option value="Sikar">Sikar</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Hamirpur">Hamirpur</option>
+                </select>
+            </div>
+
+
+            <div class="input-group">
+                <label>Exam</label>
+
+                <select id="exam">
+                    <option value="JEE">JEE</option>
+                    <option value="NEET">NEET</option>
+                    <option value="CUET">CUET</option>
+                    <option value="NDA">NDA</option>
+                </select>
+            </div>
+
+
+            <div class="input-group">
+                <label>Maximum Fee</label>
+
+                <select id="budget">
+                    <option value="200000">Any Budget</option>
+                    <option value="60000">₹60,000</option>
+                    <option value="80000">₹80,000</option>
+                    <option value="100000">₹1,00,000</option>
+                    <option value="150000">₹1,50,000</option>
+                </select>
+            </div>
+
+
+            <button class="find-btn" onclick="findCoaching()">
+                Find Coaching →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RESULTS SECTION -->
+    <section class="results-section" id="results">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">EXPLORE OPTIONS</p>
+
+                <h2>Find Your Coaching</h2>
+            </div>
+
+
+            <div class="sort-box">
+
+                <label>Sort:</label>
+
+                <select id="sort" onchange="sortResults()">
+                    <option value="rating">Highest Rating</option>
+                    <option value="fees-low">Lowest Fees</option>
+                    <option value="fees-high">Highest Fees</option>
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div id="result-message" class="result-message">
+            Select your requirements above and click
+            <b>Find Coaching</b>.
+        </div>
+
+
+        <div id="coaching-list" class="coaching-grid">
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <p class="small-title">ABOUT THE PROJECT</p>
+
+        <h2>Making Coaching Selection Easier</h2>
+
+        <p>
+            Coaching Finder is designed to bring important coaching
+            information together in one place so students and parents
+            can compare their options more easily.
+        </p>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">
+            🎓 Coaching<span>Finder</span>
+        </div>
+
+        <p>
+            Helping students make better-informed coaching decisions.
+        </p>
+
+        <p class="copyright">
+            © 2026 Coaching Finder
+        </p>
+
+    </footer>
+
+
+
+    <!-- DETAILS MODAL -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-btn" onclick="closeModal()">×</button>
+
+            <div id="modal-content">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
